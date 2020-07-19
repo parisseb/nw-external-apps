@@ -81,31 +81,6 @@ Copyright (C) 2019 Damien Nicolet
           </div>
         </div>
 
-        <div class="col-md-8 order-md-1">
-          <h4 class="mb-3" translate="AVAILABLE_APPLICATIONS"></h4>
-            <div class="row pb-3">
-              <div class="col-md-12">
-
-                <div class="card mb-3" ng-repeat="app in apps">
-                  <div class="row no-gutters">
-                    <div class="col-md-2 text-center m-auto">
-                      <img ng-src="apps/{{app.name}}/icon.png" alt="" width="52" height="52">
-                    </div>
-                    <div class="col-md-10">
-                      <div class="card-body">
-                        <h5 class="card-title">{{app.name}}<!--<span class="text-muted float-right">{{app.size}}</span>--></h5>
-                        <p class="card-text">{{app.description[locale]}}</p>
-                        <p class="card-text" ng-show="app.link"><a ng-href="{{app.link}}">{{app.link}}</a></p>
-                        <p class="card-text"><button class="btn btn-primary btn-sm" ng-click="addApplication(app)" translate="ADD"></button></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-        </div>
-      </div>
 
       <div class="row" ng-show="uploading">
         <div class="col-md-12">
