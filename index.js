@@ -258,8 +258,8 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
         let external = await loadFirmwareFile("firmware/delta.external.bin");
         let khicas = await loadFirmwareFile("apps.tar");
         await uploadFile(selectedDevice, "@External Flash /0x90000000/32*064Kg", external, false);
-        await uploadFile(selectedDevice, "@Internal Flash /0x08000000/04*016Kg", internal, true);
         await uploadFile(selectedDevice, "@KhiCAS /0x92000000/96*064Kg", khicas, true);
+        await uploadFile(selectedDevice, "@Internal Flash /0x08000000/04*016Kg", internal, true);
         $scope.$apply(function() {
           $scope.allDone = true;
         });
