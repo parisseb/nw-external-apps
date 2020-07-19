@@ -241,7 +241,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
     });
   }
 
-  $scope.uploadFirmware = function uploadFirmware() {
+  $scope.uploadFirmware = function uploadFirmware(version) {
     delete $scope.error;
     navigator.usb.requestDevice({
       filters: [{
@@ -254,11 +254,9 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
         $scope.$apply(function() {
           $scope.uploading = true;
         });
-        let internal = await loadFirmwareFile("firmware/delta.internal.bin");
-        let external = await loadFirmwareFile("firmware/delta.external.bin");
-        let khicas = await loadFirmwareFile("apps.tar");
-        await uploadFile(selectedDevice, "@External Flash /0x90000000/32*064Kg", external, false);
-        await uploadFile(selectedDevice, "@KhiCAS /0x92000000/96*064Kg", khicas, true);
+        let internal = await loadFirmwareFile("firmware/" + version + ".internal.bin");
+        let external = await loadFirmwareFile("firmware/" + version + ".external.bin");
+        await uploadFile(selectedDevice, "@External Flash /0x90000000/08*004Kg,01*032Kg,31*064Kg", external, false);
         await uploadFile(selectedDevice, "@Internal Flash /0x08000000/04*016Kg", internal, true);
         $scope.$apply(function() {
           $scope.allDone = true;
@@ -285,7 +283,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
     .translations('en', {
       TITLE: 'Unofficial N110 application repository',
       LEAD: 'Here you will find some installable applications for a N110 calculator.',
-      FIRMWARE: 'To install a compatible firmware on your calculator, please click ',
+      FIRMWARE: 'To install a compatible firmware on your calculator, please do an update on the official site, then go ',
       DISCLAIM: 'For more information (or filling an issue) please go ',
       HERE: 'here',
       NO_WEB_USB: 'Your browser does not support WebUSB, please use',
@@ -304,11 +302,12 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
       DFU_ERASING: "Erasing",
       DFU_COPYING: "Copying data",
       DFU_WROTE: "Done",
+      OR: "or",
     })
     .translations('fr', {
       TITLE: 'Dépôt d\'application N110 non officiel',
       LEAD: 'Vous trouverez ici quelques application installables sur une calculatrice N110.',
-      FIRMWARE: 'Pour installer un micrologiciel compatible, veuillez cliquer ',
+      FIRMWARE: 'Pour installer un micrologiciel compatible, veuillez mettre à jour votre calculatrice sur le site officiel, puis vous rendre ',
       DISCLAIM: 'Pour plus d\'informations (ou soumettre un problème) veuillez vous rendre ',
       HERE: 'ici',
       NO_WEB_USB: 'Votre navigateur ne supporte pas WebUSB, veuillez utiliser',
@@ -327,6 +326,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
       DFU_ERASING: "Effacement",
       DFU_COPYING: "Copie des fichiers",
       DFU_WROTE: "Terminé",
+      OR: "ou",
     })
     .registerAvailableLanguageKeys(['en', 'fr'], {
       'en_*': 'en',

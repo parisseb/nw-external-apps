@@ -31,7 +31,7 @@ Copyright (C) 2019 Damien Nicolet
         <img class="d-block mx-auto mb-4" src="images/external_icon.png" alt="" width="52" height="52">
         <h2 translate="TITLE"></h2>
         <!-- <p class="lead" translate="LEAD"></p> -->
-        <p class="lead" ng-hide="uploading">{{ 'FIRMWARE' | translate }}<a href="#" ng-click="uploadFirmware()">{{ 'HERE' | translate }}</a></p>
+        <p class="lead" ng-hide="uploading">{{ 'FIRMWARE' | translate }}<a href="#" ng-click="uploadFirmware('delta')">{{ 'HERE' | translate }}</a></p>
         <p class="lead" ng-hide="uploading">{{ 'DISCLAIM' | translate }}<a href="https://github.com/zardam/nw-external-apps" target="_blank">{{ 'HERE' | translate }}</a></p>
       </div>
 
@@ -109,7 +109,7 @@ Copyright (C) 2019 Damien Nicolet
 
       <div class="row" ng-show="uploading">
         <div class="col-md-12">
-          <p>{{lastAction || 'Progress'}}</p>
+          <p>{{lastAction || 'Progress'}}</p>
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="transition: none;" ng-style="{width: progress + '%'}"></div>
           </div>
