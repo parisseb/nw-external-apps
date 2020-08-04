@@ -1,4 +1,4 @@
-# Epsilon
+# Delta
 
 The base firmware image is a fork of https://github.com/numworks/epsilon including
 the "external" application and an API for accessing base functionality of epsilon.
@@ -20,7 +20,7 @@ The port included here is a port from the delta firmware : https://github.com/De
 
 ## Periodic
 
-This is a port of https://github.com/M4xi1m3/nw-atom
+This is a port of https://bitbucket.org/m4x1m3/nw-atom
 
 ## Nofrendo
 
