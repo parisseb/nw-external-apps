@@ -281,12 +281,12 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
 }).config(function ($translateProvider) {
   $translateProvider
     .translations('en', {
-      TITLE: 'Unofficial N110 application repository',
+      TITLE: 'Install KhiCAS on a Numworks N0110 calculator',
       LEAD: 'Here you will find some installable applications for a N110 calculator.',
-      FIRMWARE: 'To install a compatible firmware on your calculator, please do an update on the official site, then go ',
-      DISCLAIM: 'For more information (or filling an issue) please go ',
+      FIRMWARE: 'First install a compatible firmware on your calculator, click ',
+      DISCLAIM: 'If install fails, make first an upgrade on Numworks site. This page is a simplified version of ',
       HERE: 'here',
-      NO_WEB_USB: 'Your browser does not support WebUSB, please use',
+      NO_WEB_USB: 'Your browser does not support WebUSB, please use Chromium or a web-enabled browser',
       SELECTED_APPLICATIONS: 'Selected applications',
       REMOVE: 'Remove',
       CUSTOM_FILE: 'Custom file',
@@ -305,12 +305,12 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
       OR: "or",
     })
     .translations('fr', {
-      TITLE: 'Dépôt d\'application N110 non officiel',
-      LEAD: 'Installation de KhiCAS sur Numworks N110.',
-      FIRMWARE: 'Mise a jour du firmware cliquez ',
-      DISCLAIM: 'En cas de problème, commencez par mettre a jour votre calculatrice sur le site de Numworks. Si le problème persiste, veuillez vous rendre ',
+      TITLE: 'Installation de KhiCAS sur Numworks N110',
+      LEAD: 'Etape 1',
+      FIRMWARE: 'Commencez par mettre a jour le firmware en cliquant ',
+      DISCLAIM: 'En cas de problème, faites d\'abord une mise a jour votre calculatrice sur le site de Numworks. Ce site est une version allegee de ',
       HERE: 'ici',
-      NO_WEB_USB: 'Votre navigateur ne supporte pas WebUSB, veuillez utiliser',
+      NO_WEB_USB: 'Votre navigateur ne supporte pas WebUSB, veuillez utiliser Chromium ou un navigateur supportant WebUSB',
       SELECTED_APPLICATIONS: 'Applications sélectionnées',
       REMOVE: 'Supprimer',
       CUSTOM_FILE: 'Fichier local',
