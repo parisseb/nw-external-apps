@@ -306,9 +306,9 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
     })
     .translations('fr', {
       TITLE: 'Dépôt d\'application N110 non officiel',
-      LEAD: 'Vous trouverez ici quelques application installables sur une calculatrice N110.',
-      FIRMWARE: 'Pour installer un micrologiciel compatible, cliquez ',
-      DISCLAIM: 'Pour plus d\'informations (ou soumettre un problème) veuillez vous rendre ',
+      LEAD: 'Installation de KhiCAS sur Numworks N110.',
+      FIRMWARE: 'Mise a jour du firmware cliquez ',
+      DISCLAIM: 'En cas de problème, commencez par mettre a jour votre calculatrice sur le site de Numworks. Si le problème persiste, veuillez vous rendre ',
       HERE: 'ici',
       NO_WEB_USB: 'Votre navigateur ne supporte pas WebUSB, veuillez utiliser',
       SELECTED_APPLICATIONS: 'Applications sélectionnées',
