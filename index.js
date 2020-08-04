@@ -283,7 +283,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
     .translations('en', {
       TITLE: 'Install KhiCAS on a Numworks N0110 calculator',
       LEAD: 'Here you will find some installable applications for a N110 calculator.',
-      FIRMWARE: 'First install a compatible firmware on your calculator, click ',
+      FIRMWARE: 'First time: install a compatible firmware on your calculator by click ',
       DISCLAIM: 'If install fails, make first an upgrade on Numworks site. This page is a simplified version of ',
       HERE: 'here',
       NO_WEB_USB: 'Your browser does not support WebUSB, please use Chromium or a web-enabled browser',
@@ -307,7 +307,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
     .translations('fr', {
       TITLE: 'Installation de KhiCAS sur Numworks N110',
       LEAD: 'Etape 1',
-      FIRMWARE: 'Commencez par mettre a jour le firmware en cliquant ',
+      FIRMWARE: 'Premiere installation: commencez par mettre a jour le firmware en cliquant ',
       DISCLAIM: 'En cas de problème, faites d\'abord une mise a jour votre calculatrice sur le site de Numworks. Ce site est une version allegee de ',
       HERE: 'ici',
       NO_WEB_USB: 'Votre navigateur ne supporte pas WebUSB, veuillez utiliser Chromium ou un navigateur supportant WebUSB',
