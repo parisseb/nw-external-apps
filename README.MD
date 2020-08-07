@@ -2,8 +2,10 @@
 
 The base firmware image is a fork of https://github.com/numworks/epsilon including
 the "external" application and an API for accessing base functionality of epsilon.
+Beware that the source files here are not updated.
+For documentation, please refer to
+https://www-fourier.univ-grenoble-alpes.fr/~parisse/numworks/khicasnw.html
 
-The modified sources can be found here : https://github.com/Delta-NumWorks/delta/tree/external
 
 # If something goes wrong
 
@@ -16,7 +18,8 @@ I'm not affiliated with NumWorks. If your calculator is buggy when using this fi
 
 ## KhiCAS
 
-The port included here is a port from the delta firmware : https://github.com/Delta-NumWorks/delta/tree/delta
+The port included here is a port from the delta firmware :
+https://github.com/Delta-NumWorks/delta/tree/delta
 
 ## Periodic
 
