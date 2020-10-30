@@ -281,7 +281,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
 }).config(function ($translateProvider) {
   $translateProvider
     .translations('en', {
-      TITLE: 'Install KhiCAS on a Numworks N0110 calculator. <a href="www-fourier.univ-grenoble-alpes.fr/~parisse/numworks/khicasnw.html">Documentation (French)</a>',
+      TITLE: 'Install KhiCAS on a Numworks N0110 calculator. <a href="https://www-fourier.univ-grenoble-alpes.fr/~parisse/numworks/khicasnw.html">Documentation (French)</a>',
       LEAD: 'Here you will find some installable applications for a N110 calculator.',
       FIRMWARE: 'First time: install a compatible firmware on your calculator by click ',
       DISCLAIM: 'If install fails, make first an upgrade on Numworks site ',
@@ -305,7 +305,7 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
       OR: "or",
     })
     .translations('fr', {
-      TITLE: 'Installation de KhiCAS sur Numworks N110. <a href="www-fourier.univ-grenoble-alpes.fr/~parisse/numworks/khicasnw.html">Documentation</a>',
+      TITLE: 'Installation de KhiCAS sur Numworks N110. <a href="https://www-fourier.univ-grenoble-alpes.fr/~parisse/numworks/khicasnw.html">Documentation</a>',
       LEAD: 'Etape 1',
       FIRMWARE: 'Première installation: commencez par mettre a jour le firmware en cliquant ',
       DISCLAIM: 'En cas de problème, recommencez après avoir fait une mise a jour de votre calculatrice sur le site de Numworks ',
