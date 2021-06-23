@@ -305,11 +305,12 @@ angular.module('nwas', ['ngSanitize', 'pascalprecht.translate']).controller('mai
       OR: "or",
     })
     .translations('fr', {
-      TITLE: 'Installation de KhiCAS sur Numworks N110. <a href="https://www-fourier.univ-grenoble-alpes.fr/~parisse/numworks/khicasnw.html">Documentation</a>',
+      TITLE: 'Installation de KhiCAS sur Numwoks N0110. <a href="https://www-fourier.univ-grenoble-alpes.fr/~parisse/numworks/khicasnw.html">Documentation</a>',
       LEAD: 'Etape 1',
       FIRMWARE: 'Première installation: commencez par mettre a jour le firmware en cliquant ',
-      DISCLAIM: 'En cas de problème, recommencez après avoir fait une mise a jour de votre calculatrice sur le site de Numworks ',
+      DISCLAIM: 'Attention! Ne mettez pas a jour votre Numworks vers la version 16 si vous voulez installer KhiCAS ',
       HERE: 'ici',
+      SEEHERE: 'voir ici',
       NO_WEB_USB: 'Votre navigateur ne supporte pas WebUSB, veuillez utiliser Chromium ou un navigateur supportant WebUSB',
       SELECTED_APPLICATIONS: 'Applications sélectionnées',
       REMOVE: 'Supprimer',
